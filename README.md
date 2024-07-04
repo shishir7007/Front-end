@@ -1,1 +1,1 @@
-This is a repo or learning full-stack web development with python
+This is a repo for learning full-stack web development with python
