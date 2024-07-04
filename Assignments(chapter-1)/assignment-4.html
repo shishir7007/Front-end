@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment-4</title>
+    <link
+      rel="shortcut icon"
+      href="../assets/Images/assignment4.jpeg"
+      type="image/x-icon"
+    />
+    <style>
+         .container{
+        background-color: cadetblue;
+       
+      }
+      .container .heading{
+        text-align: center;
+        font-size: 3rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: purple;
+        text-transform: capitalize;
+        text-shadow: 0 .3rem .5rem ;
+        margin: 2rem 0;
+        letter-spacing: .2rem;
+      }
+      .video-container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;  /* flex items are forced to one line or multiple lines*/
+      }
+        .video-container .video{
+          height: 15rem;
+          width: 25rem;
+          margin: 3rem;
+          box-shadow: 0 .5rem 1rem;
+          overflow: hidden; /*clips the content to specified padding box of element*/
+          border-radius: 1rem;
+
+      }
+      .video-container .video video{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        outline: none;
+        border: none;
+        cursor: pointer;
+      }
+      .video-container .video video:hover{
+        transition: .2sec linear;
+        transform: scale(1.3);
+      }
+      .newtable{
+        width: 60%;
+        height: 100px;
+        border-collapse: collapse;
+        border-color: springgreen;
+        text-align: center;
+      }
+      .one {
+        font-weight: bold;
+        color: antiquewhite;
+        background-color: tomato;
+        height: 50px;
+        font-size: x-large;
+        justify-content: stretch;
+      }
+      #two {
+        font-size: 2rem;
+        color: chartreuse;
+        text-align: center;
+      }
+      .semantics{
+        width: 100%;
+        height: 100%;
+      }
+    
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <div class="heading">A simple video gallery:</div>
+          <div class="video-container">
+            <div class="video">
+              <video src="../assets/Images/gallerymain.mp4" muted autoplay controls></video>
+            </div>
+            <div class="video">
+              <video src="../assets/Images/gallery1.mp4" muted autoplay controls></video>
+            </div>
+            <div class="video">
+              <video src="../assets/Images/gallery2.mp4" muted autoplay controls></video>
+            </div>
+           <div class="video">
+              <video src="../assets/Images/gallery3.mp4" muted autoplay controls></video>
+           </div>
+            <div class="video">
+              <video src="../assets/Images/gallery4.mp4" muted autoplay controls></video>
+            </div>
+            <div class="video">
+             <video src="../assets/Images/gallery5.mp4" muted autoplay controls></video>
+            </div>
+            <div class="video">
+              <video src="../assets/Images/gallerymain.mp4" muted autoplay controls></video>
+            </div>
+            <div class="video">
+              <video src="../assets/Images/gallery1.mp4" muted autoplay controls></video>
+            </div>
+            <div class="video">
+              <video src="../assets/Images/gallery2.mp4" muted autoplay controls></video>
+            </div>
+           <div class="video">
+              <video src="../assets/Images/gallery3.mp4" muted autoplay controls></video>
+           </div>
+            <div class="video">
+              <video src="../assets/Images/gallery4.mp4" muted autoplay controls></video>
+            </div>
+            <div class="video">
+             <video src="../assets/Images/gallery5.mp4" muted autoplay controls></video>
+            </div>
+            <div class="video">
+              <video src="../assets/Images/gallerymain.mp4" muted autoplay controls></video>
+            </div>
+            <div class="video">
+              <video src="../assets/Images/gallery1.mp4" muted autoplay controls></video>
+            </div>
+            <div class="video">
+              <video src="../assets/Images/gallery2.mp4" muted autoplay controls></video>
+            </div>
+           <div class="video">
+              <video src="../assets/Images/gallery3.mp4" muted autoplay controls></video>
+           </div>
+            <div class="video">
+              <video src="../assets/Images/gallery4.mp4" muted autoplay controls></video>
+            </div>
+            <div class="video">
+             <video src="../assets/Images/gallery5.mp4" muted autoplay controls></video>
+            </div>
+         </div>
+        </div>
+      </div> <br><br>
+      <div style="text-align: center;">
+        <h1>use of id and class:</h1>
+      </div>
+        <p class="one">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim autem
+        pariatur omnis nemo quidem at.
+      </p>
+      <p id="two">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <table class="newtable" border="1">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th colspan="3">Description</th>
+          </tr>
+          <tbody>
+            <tr>
+              <td>class</td>
+              <td>multiple elements can have same class</td>
+              </tr>
+              <tr>
+              <td>id</td>
+              <td>each element has its own unique id</td>
+            </tr>
+          </tbody>
+        </thead>
+      </table><br><br><hr>
+
+     
+      
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assignment-3</title>
+  <link rel="shortcut icon" href="../assets/Images/itadori.jpeg" type="image/x-icon" />
+</head>
+
+<body>
+  <h1>
+    Q.N3 short note on table, lists, form, inline element and block element:
+  </h1>
+  <hr>
+  <h3><u>HTML table :</h3></u>
+  <p>
+    An HTML table is a fundamental structure used for organizing and
+    displaying data in rows and coluns on a web page.<br>
+    key components :
+    <dt><b>Table:</b></dt>
+    <dd>- Defined using the 'table' tag, it serves as the container for all table elements.</dd>
+    <dt><b>Rows:</b></dt>
+    <dd>- Created with the 'tr' tag, each tr (table row) conatins one or more table data cells ('td') or table header
+      cells('th').</dd>
+    <dt><b>Cells:</b></dt>
+    <dd>- 'td' (table data cell) and 'th' (table header cell) are used to define the individual data points within each
+      row. 'th' is typically used to define headers for columns or rows.</dd>
+    <dt><b>Headers:</b></dt>
+    <dd>-Optionally defined using 'head', 'tbody', and 'tfoot' tags:</dd>
+  <ul>
+    <li>'thead': Contains header rows in the table.</li>
+    <li>'tbody': Contains the main content rows.</li>
+    <li>'tfoot: Contains footer rows.</li>
+  </ul>
+  <dt><b>Attributes:</b></dt>
+  <dd>- Tables can have attributes like border, width, cellpadding, cellspacing, etc., to control spacing, borders, and
+    overall appearance.</dd>
+  </p>
+
+  <h3><u>HTML Lists:</h3></u>
+  <p>HTML lists are used to organize and structure content into ordered (numbered) and unordered (bulleted) lists. They
+    are essential for presenting information in a clear and hierarchical manner on web pages. Here are the key types of
+    lists in HTML:
+    <dt><b>Unordered lists</dt></b>
+      <li>Created using the 'ul' tag.</li>
+      <li>Each list item is defined with 'li' tags</li>
+      <li>Displayed with bullet points by default, which can be customized using CSS.</li>
+    <dt><b>ordered lists</dt></b>
+      <li>Created using the 'ol' tag.</li>
+      <li>Each list item is defined with 'li' tags</li>
+      <li>Displays items with numbers or other specified markers (like letters or Roman numerals).</li>
+    <dt><b>Description lists</dt></b>
+      <li>Created using the 'dl' tag.</li>
+      <li>Consists of pairs of terms ('dt') and their descriptions ('dd').</li>
+      <li>Useful for glossaries or defining key terms.</li>
+  </p>
+
+
+
+  <h3>Registration and login form:</h3>
+  
+    <fieldset style="width: 50%;">
+      <form action="login.php" method="post">
+        <div class="imgcontainer" style="text-align: center;">
+          <img src="../assets/Images/avatar.png" alt="login avatar" class="avatar" style="width: 10%; height: 10%; padding-bottom: 2% ;border-radius: 50%;">
+        </div>
+        <div class="container" style="text-align: center;">
+          <label for="username"><b>Username:</b></label><br>
+          <input type="text" autocomplete="username" placeholder="Enter username"><br>
+          <label for="email"><b>Email:</b></label><br>
+          <input type="email" autocomplete="username" placeholder="Enter email"><br>
+          <label for="password"><b>Password:</b></label><br>
+          <input type="password"  placeholder="Enter password" required pattern="(?=.*/d)(?=.*/[a-z])(?=.*/[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"><br>
+          <label for="confirm-password"><b>Password:</b></label><br>  
+          <input type="password"  placeholder="Confirm password"><br><br> 
+          <input type="checkbox" name="terms" id="terms">
+          <label for="checkbox" id="terms">By clicking here, I state that I have read and understood the terms and conditions.</label><br><br>
+          <button type="submit">Create Account</button>
+          <br><br>
+          <span>Already have an account?</span><a class="hover" style="text-decoration: none;" href="#">Login</a>
+        </div>
+      </form>
+    </fieldset>
+
+    <fieldset style="width: 50%;">
+      <form action="login.php" method="post">
+        <div class="imgcontainer" style="text-align: center;">
+          <img src="../assets/Images/avatar.png" alt="login avatar" class="avatar" style="width: 10%; height: 10%; padding-bottom: 2% ;border-radius: 50%;">
+        </div>
+        <div class="container" style="text-align: center;">
+         
+          <label for="email"><b>Email:</b></label><br>
+          <input type="email" autocomplete="username" placeholder="Enter email"><br>
+          <label for="password"><b>Password:</b></label><br>
+          <input type="password"  placeholder="Enter password" required pattern="(?=.*/d)(?=.*/[a-z])(?=.*/[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"><br><br>
+          <button type="submit">Login</button>
+          <br><br>
+          <a class="Hover" style="text-decoration: none;" href="#">Forgot Password?</a><br><br>
+          <span>Don't have an account?</span><span><a href="#" style="text-decoration: none;" class="hover">Sign Up</a>
+        </div>
+      </form>
+    </fieldset>
+    
+ 
+  <h1>College admission form:</h1>
+
+    <div class="college">
+      <fieldset>
+        <form action="../index.php" method="post">
+          <div style="text-align: right; margin-top: 20px;">
+            <input type="file">
+          </div>
+          <div style="text-align: center;">
+            <h2>Gandaki College Of Engineering And Science</h2><br> 
+            <h3>Student Registration Form:</h3><br>
+          </div>
+          <div style="margin-left: 100px;">
+
+            <label for="fullname"><b>Student's Name:</b></label>
+            <input type="text" name="fullname" placeholder="Enter your name"><br><br>
+            <label for="father"><b>Father's Name:</b></label>
+          <input type="text" name="father" placeholder="Enter your father's name"><br><br>
+          <label for="mother"><b>Mother's Name:</b></label>
+          <input type="text" name="mother" placeholder="Enter your mother's name"><br><br>
+          <label for="address"><b>Address:</b></label>
+          <input type="address" placeholder="Enter your address"><br><br>
+          <label for="city">City</label><span style="color: red !important">*</span>
+          <select name="city" id="city">
+            <option value="Pokhara">Pokhara</option>
+            <option value="Dharan">Dharan</option>
+            <option value="Kathmandu">Kathmandu</option>
+            <option value="Butwal">Butwal</option>
+            <option value="Palpa">Palpa</option>
+          </select> <br><br>
+          <label for="gender"><b>Gender:</b></label>
+          <input type="checkbox" name="gender" id="gender">
+          <label for="male">Male</label>
+          <input type="checkbox" name="gender" id="gender">
+          <label for="female">Female</label><br><br>
+          <label for="email"><b>Email:</b></label>
+          <input type="email" autocomplete="username" placeholder="Enter your email address"><br><br>
+          <label for="date-of-birth"><b>D.O.B:</b></label>
+          <input type="date" name="date-of-birth" id="date-of-birth"><br><br>
+          <label for="contact"><b>Mobile Number:</b></label><span style="color: red !important">*</span>
+          <input type="tel" name="contact" id="contact"><br><br>
+          <label for="level"><b>Level:</b></label>
+          <select name="level" id="level">
+            <option value="select" disabled selected> select</option>
+            <option value="Primary level">Primary level</option>
+            <option value="Secondary level">Secondary level</option>
+            <option value="Higher Secondary">Higher Secondary</option>
+            <option value="Bachelor's">Bachelor's</option>
+            <option value="Master's">Master's</option>
+          </select><br><br>
+          <label for="faculty"><b>Faculty:</b></label>
+          <select name="faculty" id="faculty">
+            <option value="none" disabled selected>select</option>
+            <option value="Software Engineering">Software Engineering</option>
+            <option value="Hotel Management">Hotel Management</option>
+            <option value="Commerce">Commerce</option>
+            <option value="Civil Engineering">Civil Engineering</option>
+            <option value="Mechanical Engineering">Mechanical Engineering</option>
+          </select> <br><br>
+          <label for="Year"><b>Academic Year:</b></label>
+          <select name="year" id="year">
+            <option value="select" selected disabled>Select</option>
+            <option value="2081">2026</option>
+            <option value="2081">2025</option>
+            <option value="2081">2024</option>
+          </select><br><br>
+          
+          <div style="text-align: center; height: 40px;">
+            <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </div>
+          
+
+        </form>
+      </fieldset>
+    </div>
+    
+
+</body>
+
+</html>

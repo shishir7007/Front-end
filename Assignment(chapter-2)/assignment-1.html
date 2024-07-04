@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment-1</title>
+    <link
+      rel="shortcut icon"
+      href="../assets/Images/assignment5.jpg"
+      type="image/x-icon"
+    />
+    <style>
+      /* use of css properties */
+      .one {
+        font-weight: bold;
+        color: antiquewhite;
+        background-color: tomato;
+        height: 50px;
+        font-size: x-large;
+        justify-content: stretch;
+      }
+      #two {
+        font-size: 2rem;
+        color: chartreuse;
+        text-align: center;
+      }
+      #radius {
+        border-radius: 30%;
+        background-color: brown;
+        width: 300px;
+        height: 250px;
+      }
+      .newtable{
+        width: 60%;
+        border-collapse: collapse;
+        border-color: springgreen;
+        text-align: center;
+      }
+
+      /* different types of CSS selectors using classes */
+      .f p {
+        background-color: cadetblue;
+      }
+
+      .a > p {
+        color: burlywood;
+      }
+
+      .b > p {
+        background-color: brown;
+      }
+
+      .c + p {
+        color: coral;
+      }
+      .g ~ p {
+        color: palevioletred;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <h1>use of some css properties:</h1>
+    <p class="one">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim autem
+      pariatur omnis nemo quidem at.
+    </p>
+    <p id="two">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <table class="newtable" border="1">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th colspan="3">Description</th>
+        </tr>
+        <tbody>
+          <tr>
+            <td>class</td>
+            <td>multiple elements can have same class</td>
+            </tr>
+            <tr>
+            <td>id</td>
+            <td>each element has its own unique id</td>
+          </tr>
+        </tbody>
+      </thead>
+    </table> <br> <br>
+    <div class="border" style="text-align: center">
+      <img
+        id="radius"
+        src="../assets/Images/borderradius.jpg"
+        alt="radius"
+        style="width: 300px; height: 250px"
+      />
+    </div>
+    <h1>CSS selectors :</h1>
+    <h3>descendant selector (denoted by space):</h3>
+    <!-- effect only applies to div's child/descendant i.e. p  -->
+    <div class="f">
+      <p>This is paragraph1</p>
+      <p>This is paragraph2</p>
+      <p>This is paragraph3</p>
+    </div>
+    <p>This is paragraph outside div.</p>
+
+    <h3>child selector (denoted by >):</h3>
+    <!-- div a liyo bhaney yesko sabai child lai apply hunchha effect div b ko p ma apply hudaina -->
+    <div class="a">
+      <p>This is a pragaraph</p>
+      <p>This is a pragaraph</p>
+      <p>This is a pragaraph</p>
+      <div class="b">
+        <p>new paragraph</p>
+        <!-- div a le yesma apply hudaina cuz its not a's child-->
+      </div>
+      <p>paragraph another</p>
+      <!-- this is div a's child so effect applies here too-->
+    </div>
+
+    <h3>adjacent sibling selector (denoted by +):</h3>
+    <!-- div pachhi ko first p jun chha tesma apply hunchha -->
+    <div class="c">
+      <p>This is a paragraph</p>
+      <p>This is a paragraph</p>
+      <p>This is a paragraph</p>
+    </div>
+    <p>paragraph 4</p>
+    <!-- applies in this p if .c+p is taken-->
+    <p>paragraph 5</p>
+    <p>paragraph 6</p>
+
+    <h3>general sibling selector (denoted by ~):</h3>
+    <!-- applies to all elements after the selected parent element except another parent's child element -->
+    <div class="g">
+      <p>This is a paragraph1</p>
+      <p>This is a paragraph2</p>
+      <p>This is a paragraph3</p>
+    </div>
+    <p>This is a paragraph4</p>
+    <!-- applies to this p and next p-->
+    <p>This is a paragraph5</p>
+    <div class="h">
+      <p>This is a paragraph6</p>
+      <!-- doesnt apply to this p as its another parents child element-->
+    </div>
+    <p>This is the last paragraph</p>
+    <!--this is parentless so applies to this p too-->
+    <hr />
+    <hr />
+    
+  </body>
+</html>
