@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment-3</title>
+    <style>
+      .linear {
+        height: 45vh;
+        width: 90%;
+        margin: 1rem;
+        /* background-image: linear-gradient(75deg, red, blue, yellow); */
+        /* background-image: repeating-linear-gradient(45deg, green, violet,tomato ); */
+        background-image: repeating-linear-gradient(
+          to left bottom,
+          blue,
+          green,
+          yellow
+        );
+      }
+      .radial {
+        height: 45vh;
+        width: 90%;
+        margin: 1rem;
+        /* background-image: radial-gradient(
+          circle,
+          blue,
+          green,
+          yellow
+        ); */
+        /* background-image: radial-gradient(circle, rgba(0, 230, 145), rgb(233, 0, 123) 20%); */
+        background-image: repeating-radial-gradient(
+          circle,
+          rgba(0, 230, 145) 5%,
+          rgb(233, 0, 123) 10%
+        );
+      }
+      .conic {
+        height: 45vh;
+        width: 90%;
+        margin: 1rem;
+        /* background-image: conic-gradient(
+          rgba(255, 67, 125, 0.2),
+          rgb(0, 167, 255)
+        ); */
+        /* background-image: repeating-conic-gradient(
+          rgba(124, 45, 222, 0.4) 10%,
+          rgb(0, 233, 124) 20%
+        ); */
+        background-image: repeating-conic-gradient(
+          at 25%,
+          rgba(124, 45, 222, 0.4) 10%,
+          rgb(0, 233, 124) 20%
+        );
+      }
+      .shadow p {
+        background: violet;
+        text-shadow: 5px 5px 10px black;
+        font-size: 5rem;
+        padding: 45px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>css color gradient methods :</h1>
+    <div class="linear"></div>
+    <div class="radial"></div>
+    <div class="conic"></div>
+    <br /><br />
+
+    <h1>css shadow effects:</h1>
+    <div class="shadow">
+      <p>Lorem ipsum dolor sit.</p>
+    </div>
+    <br /><br />
+  </body>
+</html>

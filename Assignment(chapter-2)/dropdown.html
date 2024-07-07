@@ -17,10 +17,32 @@
       }
       nav {
         display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: bisque;
       }
-
+      .items-container ul {
+        list-style: none;
+      }
+      .items-container li {
+        display: inline;
+      }
       .nav-items {
+        text-decoration: none;
+        color: black;
+        padding: 1rem;
         display: inline-block;
+      }
+      .nav-items:hover {
+        background-color: azure;
+      }
+      .dropdown {
+        position: relative;
+      }
+      .drop {
+        position: absolute;
+        right: 0;
+        top: 34px;
       }
     </style>
   </head>
@@ -29,12 +51,23 @@
       <div class="nav-logo">
         <i class="fa fa-ambulance" aria-hidden="true"></i>
       </div>
-      <ul>
-        <li><a href="" class="nav-items">Home</a></li>
-        <li><a href="" class="nav-items">About</a></li>
-        <li><a href="" class="nav-items">Services</a></li>
-        <li><a href="" class="nav-items">Pages</a></li>
-      </ul>
+      <div class="items-container">
+        <ul>
+          <li><a href="" class="nav-items">Home</a></li>
+          <li><a href="" class="nav-items">About</a></li>
+          <li><a href="" class="nav-items">Services</a></li>
+          <li><a href="" class="nav-items">Pages</a></li>
+          <ul class="dropdown">
+              <li><a href="" class="nav-items">Kaalu</a></li>
+              <li><a href="" class="nav-items">Jaalu</a></li>
+              <li><a href="" class="nav-items">Caalu</a></li>
+              <li><a href="" class="nav-items">Laalu</a></li>
+            </ul>
+
+            <li><a href="" class="nav-items">Contact</a></li>
+          </ul>
+        </ul>
+      </div>
     </nav>
   </body>
 </html>
