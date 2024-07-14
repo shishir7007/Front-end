@@ -468,3 +468,8 @@ nav {
 .active {
   text-decoration: none;
 }
+
+.JS {
+  margin: 10px;
+  padding: 10px;
+}

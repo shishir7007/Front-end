@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS-Form</title>
+    <style>
+        * {
+            background-image: ;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="form">
+      <h1>Gandaki College of Engineering and Science</h1>
+      <h2>Admission form (BESE):</h2>
+      <form action="">
+        <label for="fullname"><b>Student's Name:</b></label>
+        <input type="text" name="fullname" placeholder="Enter your name"><br><br>
+        <label for="father"><b>Father's Name:</b></label>
+      <input type="text" name="father" placeholder="Enter your father's name"><br><br>
+      <label for="mother"><b>Mother's Name:</b></label>
+      <input type="text" name="mother" placeholder="Enter your mother's name"><br><br>
+      <label for="address"><b>Address:</b></label>
+      <input type="address" placeholder="Enter your address"><br><br>
+      <label for="city">City</label><span style="color: red !important">*</span>
+      <select name="city" id="city">
+        <option value="Pokhara">Pokhara</option>
+        <option value="Dharan">Dharan</option>
+        <option value="Kathmandu">Kathmandu</option>
+        <option value="Butwal">Butwal</option>
+        <option value="Palpa">Palpa</option>
+      </select> <br><br>
+      <label for="gender"><b>Gender:</b></label>
+      <input type="checkbox" name="gender" id="gender">
+      <label for="male">Male</label>
+      <input type="checkbox" name="gender" id="gender">
+      <label for="female">Female</label><br><br>
+      <label for="email"><b>Email:</b></label>
+      <input type="email" autocomplete="username" placeholder="Enter your email address"><br><br>
+      <label for="date-of-birth"><b>D.O.B:</b></label>
+      <input type="date" name="date-of-birth" id="date-of-birth"><br><br>
+      <label for="contact"><b>Mobile Number:</b></label><span style="color: red !important">*</span>
+      <input type="tel" name="contact" id="contact"><br><br>
+      <label for="level"><b>Level:</b></label>
+      <select name="level" id="level">
+        <option value="select" disabled selected> select</option>
+        <option value="Primary level">Primary level</option>
+        <option value="Secondary level">Secondary level</option>
+        <option value="Higher Secondary">Higher Secondary</option>
+        <option value="Bachelor's">Bachelor's</option>
+        <option value="Master's">Master's</option>
+      </select><br><br>
+      <label for="faculty"><b>Faculty:</b></label>
+      <select name="faculty" id="faculty">
+        <option value="none" disabled selected>select</option>
+        <option value="Software Engineering">Software Engineering</option>
+        <option value="Hotel Management">Hotel Management</option>
+        <option value="Commerce">Commerce</option>
+        <option value="Civil Engineering">Civil Engineering</option>
+        <option value="Mechanical Engineering">Mechanical Engineering</option>
+      </select> <br><br>
+      <label for="Year"><b>Academic Year:</b></label>
+      <select name="year" id="year">
+        <option value="select" selected disabled>Select</option>
+        <option value="2081">2026</option>
+        <option value="2081">2025</option>
+        <option value="2081">2024</option>
+      </select><br><br>
+      
+      <div style="text-align: center; height: 40px;">
+        <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+      </form>
+    </div>
+  </body>
+</html>
