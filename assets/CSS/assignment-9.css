@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+header {
+  height: 75px;
+  background-color: #d3d3d3;
+  width: 100%;
+  padding: 0px 25px;
+  display: flex;
+  align-items: center;
+}
+.w3schools-logo {
+  width: 45px;
+  margin: 2px 8px;
+}
+.w3schools-logo img {
+  width: 100%;
+}
+.header-left {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.header-left a {
+  /* background-color: red; */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+  font-size: 18px;
+  font-weight: 600px;
+  text-decoration: none;
+  color: #000;
+}
+.header-left a:hover {
+  background-color: green;
+}
+.header-left a:first-child:hover {
+  background-color: transparent;
+}
+.header-left a:first-child {
+  padding: 0px;
+}
+.fa-solid {
+  padding: 0px 3px;
+}
