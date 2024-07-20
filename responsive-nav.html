@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: antiquewhite;
+        position: relative;
+      }
+      .nav-contents ul {
+        list-style: none;
+      }
+      .nav-contents ul li {
+        display: inline-block;
+      }
+      .nav-contents ul li:last-child {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: none;
+      }
+      .nav-links {
+        text-decoration: none;
+        color: black;
+        padding: 1rem;
+        display: inline-block;
+      }
+      ul .nav-links:hover {
+        background-color: bisque;
+      }
+      @media screen and (max-width: 600px) {
+        nav {
+          display: block;
+        }
+        .nav-contents ul li:not(:last-child) {
+          display: none;
+        }
+        .nav-show ul li {
+          display: block !important;
+          text-align: center;
+        }
+
+        .nav-show .nav-links {
+          display: block;
+        }
+        .nav-contents ul li:last-child {
+          display: block !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class=""><a href="" class="nav-links">Navbar</a></div>
+      <div class="nav-contents" id="respo">
+        <ul>
+          <li><a href="" class="nav-links">Home</a></li>
+          <li><a href="" class="nav-links">About</a></li>
+          <li><a href="" class="nav-links">Course</a></li>
+          <li><a href="" class="nav-links">Pages</a></li>
+          <li><a href="" class="nav-links">Contact</a></li>
+          <li>
+            <a href="" class="nav-links" onclick="displayCon(event)">
+              &#9776;</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <script>
+      function displayCon(event) {
+        event.preventDefault();
+        var x = document.getElementById("respo");
+        x.classList.toggle("nav-show");
+      }
+    </script>
+  </body>
+</html>

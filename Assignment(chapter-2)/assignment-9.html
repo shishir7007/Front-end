@@ -42,8 +42,78 @@
           Services
           <i class="fa-solid fa-caret-down"></i>
         </a>
+        <input
+          type="text"
+          placeholder="Search..."
+          name="search"
+          id="searchbar"
+          onclick="changeColor()"
+        />
+        <button type="submit">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
       </div>
-      <div class="header-right"></div>
+      <div class="header-right">
+        <div class="star">
+          <i class="fa-solid fa-sparkles" style="color: #9763f6"></i>
+          <a href="#Plus"> Plus </a>
+        </div>
+        <div class="star">
+          <i class="fa-solid fa-code" style="color: #9763f6"></i>
+          <a href="#Spaces"> Spaces </a>
+        </div>
+        <div class="cart">
+          <i class="fa-solid fa-cart-shopping" style="color: #9763f6"></i>
+          <a href="#Get-certified"> Get Certified </a>
+        </div>
+        <div id="signup-login">
+          <div class="button-links signup">
+            <a href="#" class="nav-link">Sign Up</a>
+          </div>
+
+          <div class="button-links login" id="log">
+            <a href="#" class="nav-link">Log In</a>
+          </div>
+        </div>
+      </div>
     </header>
+    <div class="subheader">
+      <a href="#">Html</a>
+      <a href="#">Css</a>
+      <a href="#">Javascript</a>
+      <a href="#">SQL</a>
+      <a href="#">Python</a>
+      <a href="#">Java</a>
+      <a href="#">PHP</a>
+      <a href="#">How To</a>
+      <a href="#">W3.CSS</a>
+      <a href="#">C</a>
+      <a href="#">C++</a>
+      <a href="#">C#</a>
+      <a href="#">BOOTSTRAP</a>
+      <a href="#">REACT</a>
+      <a href="#">MYSQL</a>
+      <a href="#">JQUERY</a>
+      <a href="#">EXCEL</a>
+      <a href="#">XML</a>
+      <a href="#">Django</a>
+      <a href="#">NUMPY</a>
+    </div>
+    <div class="container">
+      <div class="container1">
+        <h1 class="learntocode">Learn to Code</h1>
+        <h3 class="learntocode2">
+          With the world's largest web developer site.
+        </h3>
+      </div>
+      <div class="container2"></div>
+      <div class="container3"></div>
+    </div>
+    <script>
+      function changeColor() {
+        var x = document.getElementsByClassName("searchbar");
+        x.style.backgroundColor = "#04aa6d";
+      }
+    </script>
   </body>
 </html>

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JS</title>
   </head>
-  <body>
+  <body onload="onload">
     <!-- <div class="JS" style="text-align: center">
       <h1>JS tutorial:</h1>
       <h3>What can JS do?</h3>
@@ -24,11 +24,52 @@
   </div><br><br>
   
   -->
-    <p id="demo"></p>
+    <!-- DOM -->
+    <!-- <p id="demo"></p>
     <p class="new">Hello</p>
     <p class="new">Ram</p>
     <p class="new">I am from Nepal</p>
-    <p id="new"></p>
+    <p id="new"></p> -->
+
+    <!-- <div id="loading">
+      <button id="date" onclick="newDate()">Click me</button>
+      <p id="jscss" onmouseover="onmouse()" onmouseout="onmouseOut()">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, dolore.
+      </p>
+      <button id="onmousedown" onmousedown="onMouseDown()">Submit</button>
+    </div>
+    <!--  -->
+    <div class="container">
+      <form action="" name="myForm" onsubmit="return formValidation()">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" />
+        <p id="nmessage"></p>
+
+        <label for="phone">Phone</label>
+        <input type="text" name="phone" id="phone" />
+        <p id="pmessage"></p>
+
+        <label for="email">email</label>
+        <input type="text" name="email" id="email" />
+        <p id="emessage"></p>
+
+        <label for="password">password</label>
+        <input type="password" name="password" id="password" />
+        <input type="checkbox" onclick="seePassword()" />
+        <strong>Show Password</strong>
+        <p id="pssmessage"></p>
+
+        <label for="cpassword">Conform password</label>
+        <input type="password" name="cpassword" id="cpassword" />
+        <p id="cpassmessage"></p>
+
+        <input type="submit" />
+      </form>
+    </div>
+
+    <div class="event">
+      <button on></button>
+    </div>
 
     <script src="./assets/JS/min.js"></script>
   </body>
