@@ -15,8 +15,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
   </head>
+
   <body>
-    <header>
+    <!-- navbar section -->
+    <nav>
+      <!-- leftside of navbar -->
       <div class="header-left">
         <a href="#">
           <div class="w3schools-logo">
@@ -47,71 +50,135 @@
           placeholder="Search..."
           name="search"
           id="searchbar"
-          onclick="changeColor()"
+          onmousedown="changeColor()"
         />
         <button type="submit">
           <i class="fa fa-search" aria-hidden="true"></i>
         </button>
+        <!-- light-dark toggle button -->
+        <div class="toggle-btn">
+          <i class="fa-solid fa-circle-half-stroke"></i>
+        </div>
       </div>
+      <!-- rightside of navbar -->
       <div class="header-right">
-        <div class="star">
-          <i class="fa-solid fa-sparkles" style="color: #9763f6"></i>
-          <a href="#Plus"> Plus </a>
-        </div>
-        <div class="star">
-          <i class="fa-solid fa-code" style="color: #9763f6"></i>
-          <a href="#Spaces"> Spaces </a>
-        </div>
-        <div class="cart">
-          <i class="fa-solid fa-cart-shopping" style="color: #9763f6"></i>
-          <a href="#Get-certified"> Get Certified </a>
-        </div>
-        <div id="signup-login">
-          <div class="button-links signup">
-            <a href="#" class="nav-link">Sign Up</a>
-          </div>
+        <a href="#Plus" class="plus"> <i class="fa fa-sparkle"></i> Plus</a>
+        <a href="#Spaces" class="spaces"><i class="fa fa-code"></i> Spaces</a>
+        <a href="Certified" class="Certified">
+          <i class="fa fa-shopping-cart"></i>
+          Get Certified
+        </a>
 
-          <div class="button-links login" id="log">
-            <a href="#" class="nav-link">Log In</a>
-          </div>
+        <div class="toggle-entry">
+          <a href="#signup" class="sign-up">Sign Up</a>
+          <a href="login  " class="login">Log in</a>
         </div>
       </div>
-    </header>
-    <div class="subheader">
-      <a href="#">Html</a>
-      <a href="#">Css</a>
-      <a href="#">Javascript</a>
-      <a href="#">SQL</a>
-      <a href="#">Python</a>
-      <a href="#">Java</a>
-      <a href="#">PHP</a>
-      <a href="#">How To</a>
-      <a href="#">W3.CSS</a>
-      <a href="#">C</a>
-      <a href="#">C++</a>
-      <a href="#">C#</a>
-      <a href="#">BOOTSTRAP</a>
-      <a href="#">REACT</a>
-      <a href="#">MYSQL</a>
-      <a href="#">JQUERY</a>
-      <a href="#">EXCEL</a>
-      <a href="#">XML</a>
-      <a href="#">Django</a>
-      <a href="#">NUMPY</a>
-    </div>
-    <div class="container">
-      <div class="container1">
-        <h1 class="learntocode">Learn to Code</h1>
-        <h3 class="learntocode2">
+    </nav>
+    <!-- subheader section -->
+    <div class="section">
+      <div class="subheader">
+        <a href="#">HTML</a>
+        <a href="#">CSS</a>
+        <a href="#">JAVASCRIPT</a>
+        <a href="#">SQL</a>
+        <a href="#">PYTHON</a>
+        <a href="#">JAVA</a>
+        <a href="#">PHP</a>
+        <a href="#">HOW&nbsp;TO</a>
+        <a href="#">W3.CSS</a>
+        <a href="#">C</a>
+        <a href="#">C++</a>
+        <a href="#">C#</a>
+        <a href="#">BOOTSTRAP</a>
+        <a href="#">REACT</a>
+        <a href="#">MYSQL</a>
+        <a href="#">JQUERY</a>
+        <a href="#">EXCEL</a>
+        <a href="#">XML</a>
+      </div>
+      <!--  body section -->
+      <div class="section1">
+        <h1 class="learntocode" style="text-align: center">Learn to Code</h1>
+        <h3 class="learntocode2" style="text-align: center">
           With the world's largest web developer site.
         </h3>
+        <div class="section-search" style="text-align: center">
+          <input type="search" placeholder="Search our tutorials, e.g. HTML" />
+          <a href="#search2">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+        </div>
+
+        <a href="#guide" style="text-decoration: underline" id="guidance"
+          >Not Sure Where To Begin?</a
+        >
+        <!-- svg image -->
+        <div class="custom-shape-divider-bottom-1721885568">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
       </div>
-      <div class="container2"></div>
-      <div class="container3"></div>
     </div>
+
+    <!-- HTML section -->
+    <div class="section2">
+      <h1>HTML</h1>
+      <p>The language for building web pages</p>
+      <a href="#" class="btn1">Learn HTML</a><br />
+      <a href="#" class="btn2">Video Tutorial</a><br />
+      <a href="#" class="btn3">HTML Reference</a><br />
+      <a href="#" class="btn4">Get Certified</a><br />
+    </div>
+
+    <!-- CSS section -->
+    <div class="section3">
+      <h1>CSS</h1>
+      <p>The language for Styling web pages</p>
+      <a href="#" class="btn5">Learn CSS</a><br />
+      <a href="#" class="btn6">CSS Reference</a><br />
+      <a href="#" class="btn7">Get Certified</a><br />
+    </div>
+
+    <!-- Javascript section -->
+    <div class="section4">
+      <h1>Javascript</h1>
+      <p>The language for programming web pages</p>
+      <a href="#" class="btn8">Learn Javascript</a><br />
+      <a href="#" class="btn9">Javascript Reference</a><br />
+      <a href="#" class="btn10">Get Certified</a><br />
+    </div>
+
+    <!-- Python section -->
+    <div class="section5">
+      <h1>Python</h1>
+      <p>A popular programming language</p>
+      <a href="#" class="btn11">Learn Python</a><br />
+      <a href="#" class="btn12">Python Reference</a><br />
+      <a href="#" class="btn13">Get Certified</a><br />
+    </div>
+
+    <!-- SQL section -->
+    <div class="section6">
+      <h1>SQL</h1>
+      <p>A language for accessing databases</p>
+      <a href="#" class="btn14">Learn SQL</a><br />
+      <a href="#" class="btn15">SQL Reference</a><br />
+      <a href="#" class="btn16">Get Certified</a><br />
+    </div>
+
     <script>
       function changeColor() {
-        var x = document.getElementsByClassName("searchbar");
+        var x = document.getElementsById("searchbar");
         x.style.backgroundColor = "#04aa6d";
       }
     </script>
